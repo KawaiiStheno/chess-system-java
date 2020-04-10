@@ -28,56 +28,56 @@ public class King extends ChessPiece {
 
 		// above
 
-		p.serValues(position.getRow() - 1, position.getColumn());
+		p.setValues(position.getRow() - 1, position.getColumn());
 		if (getBoard().positionExists(p) && canMove(p)) {
 			mat[p.getRow()][p.getColumn()] = true;
 		}
 
 		// below
 
-		p.serValues(position.getRow() + 1, position.getColumn());
+		p.setValues(position.getRow() + 1, position.getColumn());
 		if (getBoard().positionExists(p) && canMove(p)) {
 			mat[p.getRow()][p.getColumn()] = true;
 		}
 
 		// left
 
-		p.serValues(position.getRow(), position.getColumn()-1);
+		p.setValues(position.getRow(), position.getColumn()-1);
 		if (getBoard().positionExists(p) && canMove(p)) {
 			mat[p.getRow()][p.getColumn()] = true;
 		}
 		
 		// right
 
-		p.serValues(position.getRow(), position.getColumn()+1);
+		p.setValues(position.getRow(), position.getColumn()+1);
 		if (getBoard().positionExists(p) && canMove(p)) {
 			mat[p.getRow()][p.getColumn()] = true;
 		}
 		
 		// nw
 
-		p.serValues(position.getRow()-1, position.getColumn()-1);
+		p.setValues(position.getRow()-1, position.getColumn()-1);
 		if (getBoard().positionExists(p) && canMove(p)) {
 			mat[p.getRow()][p.getColumn()] = true;
 		}
 		
 		// ne
 
-		p.serValues(position.getRow()-1, position.getColumn()+1);
+		p.setValues(position.getRow()-1, position.getColumn()+1);
 		if (getBoard().positionExists(p) && canMove(p)) {
 			mat[p.getRow()][p.getColumn()] = true;
 		}
 		
 		// sw
 
-		p.serValues(position.getRow()+1, position.getColumn()-1);
+		p.setValues(position.getRow()+1, position.getColumn()-1);
 		if (getBoard().positionExists(p) && canMove(p)) {
 			mat[p.getRow()][p.getColumn()] = true;
 		}
 		
 		// se
 
-		p.serValues(position.getRow()+1, position.getColumn()+1);
+		p.setValues(position.getRow()+1, position.getColumn()+1);
 		if (getBoard().positionExists(p) && canMove(p)) {
 			mat[p.getRow()][p.getColumn()] = true;
 		}
